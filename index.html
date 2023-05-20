@@ -27,6 +27,79 @@
           <a href="./index.html" class="logo link"
             >Web<span class="header-studio-word span">Studio</span></a
           >
+          <!--MODILE-MENU-->
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#burger-icon"></use>
+            </svg>
+          </button>
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="btn-close js-close-menu">
+              <svg class="icon-close" width="8" height="8">
+                <use href="./images/icons.svg#close-black-18"></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu">
+              <li class="mobile-navigation-item">
+                <a href="./index.html" class="link mobile-navigation-link mobile-navigation-link--active">Studio</a>
+              </li>
+              <li class="mobile-navigation-item">
+                <a href="./portfolio.html" class="link mobile-navigation-link">Portfolio</a>
+              </li>
+              <li class="mobile-navigation-item">
+                <a href="#" class="link mobile-navigation-link">Contacts</a>
+              </li>
+            </ul>
+            <ul class="list mobile-contacts">
+              <li class="mobile-navigation-item">
+                <a href="tel:+110001111111" class="link contact-link mobile-phone">
+                  +11 (000) 111-11-11</a>
+              </li>
+              <li class="mobile-navigation-item">
+                <a href="mailto:info@devstudio.com" class="link contact-link mobile-mail">
+                  info@devstudio.com</a>
+              </li>
+             <li>
+             <ul class="soc-list-mob list">
+              <li class="socials-item">
+                <a href="" class="link social-mob">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a href="" class="link social-mob">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a href="" class="link social-mob">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a href="" class="link social-mob">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+          </div>
+
+          <!--MENU-->
           <ul class="list link-ul">
             <li class="header-item">
               <a class="nav-link link curent" href="./index.html">Studio</a>
@@ -443,11 +516,17 @@
             </li>
           </ul>
         </div>
-        
+
         <form class="subscribe">
           <label for="subscribe-mail" class="subscribe-header">Subscribe</label>
           <div class="subscribe-form">
-            <input type="mail" name="mail" id="subscribe-mail" placeholder="E-mail" class="subscribe-input">
+            <input
+              type="mail"
+              name="mail"
+              id="subscribe-mail"
+              placeholder="E-mail"
+              class="subscribe-input"
+            />
             <button type="submit" class="submit-btn">Subscribe</button>
           </div>
         </form>
@@ -502,28 +581,37 @@
             </svg>
           </div>
           <label class="form-label" for="modal_comment">Comment</label>
-          <textarea class="form-comment" 
-          name="modal_comment" 
-          id="modal_comment" 
-          cols="30" 
-          rows="10"
-          placeholder="Text input"
-        ></textarea>
-        <div class="license-checkbox">
-          <label class="form-checkbox" for="checkbox">
-            <input class="input-checkbox" type="checkbox" id="checkbox"> <span class="agree-text">I accept the terms and conditions of the</span>
-            <svg class="check-icon" width="10" height="8">
-              <use href="./images/icons.svg#vector"></use>
-            </svg>
-             
-           </label>
-           <a href="" class="agreement-link link"> Privacy Policy</a>
-        </div>
-        <button type="button" class="btn form-btn">Send</button>
+          <textarea
+            class="form-comment"
+            name="modal_comment"
+            id="modal_comment"
+            cols="30"
+            rows="10"
+            placeholder="Text input"
+          ></textarea>
+          <div class="license-checkbox">
+            <label class="form-checkbox" for="checkbox">
+              <input class="input-checkbox" type="checkbox" id="checkbox" />
+              <span class="agree-text"
+                >I accept the terms and conditions of the</span
+              >
+              <svg class="check-icon" width="10" height="8">
+                <use href="./images/icons.svg#vector"></use>
+              </svg>
+            </label>
+            <a href="" class="agreement-link link"> Privacy Policy</a>
+          </div>
+          <button type="button" class="btn form-btn">Send</button>
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
