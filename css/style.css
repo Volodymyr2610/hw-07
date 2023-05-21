@@ -50,8 +50,8 @@ body {
   padding: 0 16px;
   margin: 0 auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 @media only screen and (min-width: 428px) {
@@ -1001,9 +1001,7 @@ footer {
     flex-direction: row;
   }
 }
-.subscribe-form {
-  margin-top: ;
-} 
+
 
 .subscribe-header {
   text-align: center;
