@@ -913,6 +913,7 @@ footer {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 72px;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
@@ -927,7 +928,7 @@ footer {
     gap: 0;
   }
 }
-.social-media {
+/* .social-media {
   margin-left: auto;
   margin-right: auto;
 }
@@ -936,7 +937,7 @@ footer {
   .social-media {
     margin-left: 0;
   }
-}
+} */
 .soc-media {
   font-weight: 500;
   font-size: 16px;
@@ -984,8 +985,7 @@ footer {
 
 .subscribe,
 .subscribe-form {
-  /* margin-right: auto;
-  margin-left: auto; */
+
   flex-direction: column;
   display: flex;
 }
@@ -999,7 +999,7 @@ footer {
 @media screen and (min-width: 1158px) {
   .subscribe {
     width: auto;
-    /* margin-right: 0; */
+    margin-left: auto;
   }
 }
 
