@@ -224,6 +224,7 @@ body {
   height: 32px;
   width: 24px;
   display: flex;
+  align-items: center;
   margin-left: auto;
   color: #000;
 
@@ -661,6 +662,7 @@ a {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -678,10 +680,6 @@ a {
   }
 }
 
-.team-photo {
-  display: flex;
-  justify-content: center;
-}
 
 .member {
   background: var(--white-text);
@@ -858,7 +856,6 @@ footer {
 @media only screen and (min-width: 768px) {
   .footer-logo {
     display: inline-block;
-    /* margin-bottom: 16px; */
   }
 }
 .footer-section {
@@ -890,15 +887,6 @@ footer {
   max-width: 264px;
 }
 
-/* .logo-container {
-  margin-left: auto;
-  margin-right: auto;
-}
-@media only screen and (min-width: 768px) {
-  .logo-container {
-  margin-right: 0;
-  }
-} */
 
 @media only screen and (min-width: 1158px) {
   .logo-container {
@@ -920,6 +908,7 @@ footer {
   .footer-container {
     width: 552px;
     gap: 72px 24px;
+    justify-content: flex-start;
   }
 }
 
@@ -928,16 +917,7 @@ footer {
     gap: 0;
   }
 }
-/* .social-media {
-  margin-left: auto;
-  margin-right: auto;
-}
 
-@media only screen and (min-width: 768px) {
-  .social-media {
-    margin-left: 0;
-  }
-} */
 .soc-media {
   font-weight: 500;
   font-size: 16px;
@@ -1277,34 +1257,26 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 320px;
-  min-height: 584px;
+  width: 100%;
+  max-width: 392px;
+  max-height: 584px;
   background: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: var(--transition-timing-function);
-  padding: 72px 24px 24px;
+  padding: 72px 16px 16px;
 }
 
-@media only screen and (min-width: 428px) {
-  .modal {
-    min-width: 392px;
-  }
-}
+
 
 @media only screen and (min-width: 768px) {
   .modal {
     min-width: 408px;
+    padding: 72px 24px 24px;
   }
 }
 
-@media only screen and (min-width: 1158px) {
-  .modal {
-    min-width: 408px;
-    min-height: 576px;
-  }
-}
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1);
@@ -1343,6 +1315,15 @@ footer {
 
 .icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.madal-tatle {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .form-label {
